@@ -305,9 +305,11 @@ class Settings(commands.Cog, name="settings"):
 
         available_memory, total_memory = memory.available, memory.total
         used_disk_space, total_disk_space = disk.used, disk.total
+        cpu_freq = psutil.cpu_freq()
+        freq_str = f"{cpu_freq.current:.0f}MHz " if cpu_freq else "?? MHz"
         embed = discord.Embed(title="📄 Debug Panel", color=voicelink.Config().embed_color)
         embed.description = "```==    System Info    ==\n" \
-                            f"• CPU:     {psutil.cpu_freq().current}Mhz ({psutil.cpu_percent()}%)\n" \
+                            f"• CPU:     {freq_str}({psutil.cpu_percent()}%)\n" \
                             f"• RAM:     {format_bytes(total_memory - available_memory)}/{format_bytes(total_memory, True)} ({memory.percent}%)\n" \
                             f"• DISK:    {format_bytes(total_disk_space - used_disk_space)}/{format_bytes(total_disk_space, True)} ({disk.percent}%)```"
 
