@@ -35,7 +35,7 @@
             "vocard": "INFO",
             "ipc_client": "INFO"
         },
-        "max-history": 30
+        "max_history": 30
     },
     "bot_access_user": [],
     "embed_color":"0xb3b3b3",
@@ -49,8 +49,13 @@
         "secure": false,
         "enable": false
     },
+    "timer_settings": {
+        "bot_activity_update": 600,
+        "inactive_player_cleanup": 600,
+        "cache_cleanup": 43200
+    },
     "playlist_settings": {
-        "max_playlist": 5,
+        "max_playlists": 5,
         "max_tracks_per_playlist": 500,
         "default_playlist_name": "Favourite"
     },

@@ -28,7 +28,9 @@
             "resume": "Resume",
             "skip": "Skip",
             "leave": "Leave",
-            "loop": "Loop",
+            "loopOff": "Off",
+            "loopTrack": "Track",
+            "loopQueue": "Queue",
             "volumeUp": "Volume Up",
             "volumeDown": "Volume Down",
             "volumeMute": "Mute",
@@ -121,7 +123,9 @@
             "controllerToggled": "You now have `{0}` the music controller.",
             "duplicateTrackToggled": "You have now `{0}` duplicate track prevention.",
             "controllerMsgToggled": "You now have `{0}` messages from the music controller.",
-            "silentMsgToggled": "You have {0} silent messaging."
+            "silentMsgToggled": "You have {0} silent messaging.",
+            "resetDone": "Reset `{0}` to server defaults.",
+            "resetNotFound": "Invalid setting name. Please use one of the following: {0}"
         },
         "menu": "Server Settings | {0}",
         "basic": {
